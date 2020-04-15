@@ -1,0 +1,20 @@
+# Aza-Aza
+
+Aza-Aza helps you achieve your goals!
+
+## API List
+
+- [ ] Create Account
+- [ ] Request Secret
+- [ ] Confirm Secret
+- [ ] Login
+- [ ] Like / Unlike a goal
+- [ ] Comment on a goal
+- [ ] Search by user
+- [ ] Search by goal
+- [ ] Edit my profile
+- [ ] See user profile
+- [ ] See my profile
+- [ ] Upload a goal
+- [ ] Edit the goal (Delete)
+- [ ] See the goals (Feed)

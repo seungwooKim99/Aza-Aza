@@ -1,0 +1,52 @@
+type User {
+  id: ID! @id
+  username: String!
+  email: String!  @unique
+  firstName: String! @default(value: "")
+  lastName: String!
+  password: String
+  goals: [Goal!]! @relation(name: "GoalOfUser", onDelete:CASCADE)
+  likes: [Like!]! @relation(name: "LikeOfUser", onDelete:CASCADE)
+  comments: [Comment!]! @relation(name: "CommentOfUser", onDelete:CASCADE)
+  toDos: [ToDo!]! @relation(name: "ToDoOfUser", onDelete:CASCADE)
+  signUpSecret: String
+  createdAt: DateTime @createdAt
+  updatedAt: DateTime @updatedAt
+}
+
+type Goal {
+  id: ID! @id
+  caption: String!
+  user: User @relation(name: "GoalOfUser")
+  toDos: [ToDo!]! @relation(name: "ToDoOfGoal", onDelete:CASCADE)
+  likes: [Like!]! @relation(name: "LikeOfGoal", onDelete:CASCADE)
+  comments: [Comment!]! @relation(name: "CommentOfGoal", onDelete:CASCADE)
+  createdAt: DateTime @createdAt
+  updatedAt: DateTime @updatedAt
+}
+
+type Like {
+  id: ID! @id
+  user: User @relation(name: "LikeOfUser")
+  goal: Goal @relation(name: "LikeOfGoal")
+  createdAt: DateTime @createdAt
+  updatedAt: DateTime @updatedAt
+}
+
+type Comment {
+  id: ID! @id
+  text: String!
+  user: User @relation(name: "CommentOfUser")
+  goal: Goal @relation(name: "CommentOfGoal")
+  createdAt: DateTime @createdAt
+  updatedAt: DateTime @updatedAt
+}
+
+type ToDo {
+  id: ID! @id
+  text: String!
+  user: User @relation(name: "ToDoOfUser")
+  goal: Goal @relation(name: "ToDoOfGoal")
+  createdAt: DateTime @createdAt
+  updatedAt: DateTime @updatedAt
+}

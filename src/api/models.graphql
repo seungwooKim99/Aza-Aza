@@ -1,0 +1,58 @@
+type User {
+  id: ID! 
+  username: String!
+  email: String! 
+  firstName: String!
+  lastName: String!
+  fullName: String
+  password: String
+  isSelf: Boolean!
+  goals: [Goal!]!
+  postsCount: Int!
+  likes: [Like!]!
+  comments: [Comment!]!
+  toDos: [ToDo!]!
+  signUpSecret: String
+  createdAt: String
+  updatedAt: String
+}
+
+type Goal {
+  id: ID! 
+  caption: String!
+  user: User!
+  toDos: [ToDo!]! 
+  likes: [Like!]! 
+  comments: [Comment!]!
+  isLiked: Boolean!
+  likeCount: Int!
+  commentCount: Int!
+  createdAt: String
+  updatedAt: String
+}
+
+type Like {
+  id: ID! 
+  user: User!
+  goal: Goal!
+  createdAt: String
+  updatedAt: String
+}
+
+type Comment {
+  id: ID! 
+  text: String!
+  user: User!
+  goal: Goal!
+  createdAt: String
+  updatedAt: String
+}
+
+type ToDo {
+  id: ID! 
+  text: String!
+  user: User!
+  goal: Goal!
+  createdAt: String
+  updatedAt: String
+}
