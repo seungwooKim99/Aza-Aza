@@ -1,5 +1,5 @@
 import { prisma } from "../../../../generated/prisma-client";
-import { generateSecret } from "../../../util";
+import { generateSecret, sendSecretMail } from "../../../util";
 
 export default {
     Mutation: {
@@ -11,8 +11,8 @@ export default {
                 await prisma.updateUser({ data: { signUpSecret }, where: { email } });
                 return true;
             }
-            catch{
-                throw Error("Can't request secret");
+            catch (error) {
+                console.log(error);
                 return false;
             }
         }

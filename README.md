@@ -7,6 +7,7 @@ Aza-Aza helps you achieve your goals!
 - [ ] Create Account
 - [ ] Request Secret
 - [ ] Confirm Secret
+- [ ] Check password
 - [ ] Login
 - [ ] Like / Unlike a goal
 - [ ] Comment on a goal
