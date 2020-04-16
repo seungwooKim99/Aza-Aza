@@ -1,0 +1,3 @@
+type Mutation {
+    addComment(goalId: String! text: String!): Comment!
+}

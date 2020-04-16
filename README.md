@@ -4,13 +4,12 @@ Aza-Aza helps you achieve your goals!
 
 ## API List
 
-- [ ] Create Account
-- [ ] Request Secret
-- [ ] Confirm Secret
-- [ ] Check password
-- [ ] Login
-- [ ] Like / Unlike a goal
-- [ ] Comment on a goal
+- [x] Create Account
+- [x] Request Secret
+- [x] Confirm Secret
+- [x] Login (Using JWT)
+- [x] Like / Unlike a goal
+- [x] Comment on a goal
 - [ ] Search by user
 - [ ] Search by goal
 - [ ] Edit my profile
