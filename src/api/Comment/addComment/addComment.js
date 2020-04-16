@@ -1,9 +1,8 @@
-import { isAuthenticated } from "../../../isAuthenticated"
 import { prisma } from "../../../../generated/prisma-client";
 
 export default {
     Mutation: {
-        addComment: async (_, args, { request }) => {
+        addComment: async (_, args, { request, isAuthenticated }) => {
             isAuthenticated(request);
             const { goalId, text } = args;
             const { user } = request;

@@ -10,8 +10,8 @@ Aza-Aza helps you achieve your goals!
 - [x] Login (Using JWT)
 - [x] Like / Unlike a goal
 - [x] Comment on a goal
-- [ ] Upload a goal
-- [ ] Edit the goal (Delete)
+- [x] Upload a goal
+- [x] Edit the goal (Delete)
 - [ ] See user profile
 - [ ] See my profile
 - [ ] See the goals (Feed)
