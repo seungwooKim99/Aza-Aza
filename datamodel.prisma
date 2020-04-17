@@ -18,6 +18,7 @@ type Goal {
   id: ID! @id
   caption: String!
   user: User @relation(name: "GoalOfUser")
+  isAchieved: Boolean!
   toDos: [ToDo!]! @relation(name: "ToDoOfGoal", onDelete:CASCADE)
   likes: [Like!]! @relation(name: "LikeOfGoal", onDelete:CASCADE)
   comments: [Comment!]! @relation(name: "CommentOfGoal", onDelete:CASCADE)
@@ -45,6 +46,7 @@ type Comment {
 type ToDo {
   id: ID! @id
   text: String!
+  isDone: Boolean!
   user: User @relation(name: "ToDoOfUser")
   goal: Goal @relation(name: "ToDoOfGoal")
   createdAt: DateTime @createdAt

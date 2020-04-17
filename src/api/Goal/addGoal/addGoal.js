@@ -26,7 +26,8 @@ export default {
                         connect: {
                             id: Goal.id
                         }
-                    }
+                    },
+                    isDone: false
                 })
             });
             return Goal;

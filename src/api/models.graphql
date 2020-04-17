@@ -21,6 +21,7 @@ type Goal {
   id: ID! 
   caption: String!
   user: User!
+  isAchieved: Boolean!
   toDos: [ToDo!]! 
   likes: [Like!]! 
   comments: [Comment!]!
@@ -51,6 +52,7 @@ type Comment {
 type ToDo {
   id: ID! 
   text: String!
+  isDone: Boolean!
   user: User!
   goal: Goal!
   createdAt: String

@@ -12,6 +12,10 @@ Aza-Aza helps you achieve your goals!
 - [x] Comment on a goal
 - [x] Upload a goal
 - [x] Edit the goal (Delete)
-- [ ] See user profile
-- [ ] See my profile
-- [ ] See the goals (Feed)
+- [x] Create ToDo
+- [x] Set isDone True (ToDo)
+- [x] Set isDone False (ToDo)
+- [x] Set the goal achieved
+- [x] See user profile
+- [x] See my profile
+- [x] See the goals (Feed)
