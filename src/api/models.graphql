@@ -13,6 +13,7 @@ type User {
   comments: [Comment!]!
   toDos: [ToDo!]!
   signUpSecret: String
+  isUnlocked: Boolean!
   createdAt: String
   updatedAt: String
 }

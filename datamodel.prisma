@@ -10,6 +10,7 @@ type User {
   comments: [Comment!]! @relation(name: "CommentOfUser", onDelete:CASCADE)
   toDos: [ToDo!]! @relation(name: "ToDoOfUser", onDelete:CASCADE)
   signUpSecret: String
+  isUnlocked: Boolean!
   createdAt: DateTime @createdAt
   updatedAt: DateTime @updatedAt
 }
